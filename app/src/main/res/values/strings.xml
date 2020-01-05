@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">YunBianScanner</string>
+    <string name="take_photo">Camera</string>
+    <string name="choose_photo">Collections</string>
+    <string name="choose">Choose Photo</string>
+
+    <string name="scan_photo">scan photo</string>
+
+    <string name="permission_granted">Permission Granted</string>
+    <string name="decode_fail">Decode image fail.</string>
 </resources>
