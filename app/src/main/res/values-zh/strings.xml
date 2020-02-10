@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">云边扫描</string>
+    <string name="choose">选择图片</string>
+    <string name="decode_fail">图像解析失败</string>
+    <string name="permission_granted">已授权</string>
+    <string name="take_photo">相机</string>
+    <string name="choose_photo_from_collection">从相册中选择图片</string>
+    <string name="permission_request">请授予权限.</string>
+    <string name="copy_barcode">复制</string>
+    <string name="goods_price">商品价格</string>
+    <string name="goods_describe">商品描述</string>
+</resources>

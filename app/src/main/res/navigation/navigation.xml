@@ -2,11 +2,44 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/scanFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.raids.yunbianscanner.view.fragment.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/scanFragment"
+        android:name="com.raids.yunbianscanner.view.fragment.ScanFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_scanFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_scanFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/exit"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.raids.yunbianscanner.view.fragment.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/enter"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.raids.yunbianscanner.view.fragment.DetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

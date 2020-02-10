@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ScanFragment">
+
+    <com.raids.yunbianscanner.weight.AutoFitTextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:src="@drawable/rect_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/choose_picture"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_width="wrap_content"
+        android:text="@string/choose_photo_from_collection"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

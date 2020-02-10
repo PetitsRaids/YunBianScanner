@@ -1,11 +1,21 @@
 <resources>
     <string name="app_name">YunBianScanner</string>
     <string name="take_photo">Camera</string>
-    <string name="choose_photo">Collections</string>
-    <string name="choose">Choose Photo</string>
+    <string name="choose_photo" translatable="false">Collections</string>
+    <string name="choose" translatable="false">Choose Photo</string>
 
-    <string name="scan_photo">scan photo</string>
+    <string name="scan_photo" translatable="false">scan photo</string>
 
-    <string name="permission_granted">Permission Granted</string>
-    <string name="decode_fail">Decode image fail.</string>
+    <string name="permission_granted" translatable="false">Permission Granted</string>
+    <string name="decode_fail" translatable="false">Decode image fail.</string>
+    <string name="choose_photo_from_collection">Choose picture from Album</string>
+
+    <string name="permission_request">Please grant permission.</string>
+    <string name="copy_barcode">Copy Barcode</string>
+    <string name="goods_price">Goods Price</string>
+    <string name="goods_describe">Goods Describe</string>
+    <string name="history">History</string>
+    <string name="detail">Details</string>
+    <string name="barcode">Barcode</string>
+    <string name="goods_name">Goods Name</string>
 </resources>

@@ -19,8 +19,9 @@ import androidx.core.content.FileProvider
 import androidx.core.net.toUri
 
 import com.raids.yunbianscanner.R
-import com.raids.yunbianscanner.utils.MyUtils
+import com.raids.yunbianscanner.support.utils.MyUtils
 import com.yalantis.ucrop.UCrop
+import org.opencv.android.OpenCVLoader
 import java.io.File
 
 class MainFragment : Fragment() {
@@ -41,6 +42,12 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        val success = OpenCVLoader.initDebug()
+        if (success) {
+            Log.d("NDK", "SUCCESS")
+        } else {
+            Log.d("NDK", "FAIL")
+        }
         takePhoto = view!!.findViewById(R.id.take_photo)
         takePhoto.setOnClickListener {
             requestPermission()
@@ -162,7 +169,6 @@ class MainFragment : Fragment() {
         if (requestCode == MyUtils.PERMISSION_REQUEST_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(context, R.string.permission_granted, Toast.LENGTH_SHORT).show()
-                openCamera()
             }
         }
     }
